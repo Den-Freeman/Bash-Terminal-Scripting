@@ -1,0 +1,13 @@
+$apt
+
+$sudo apt install suricata
+          remove
+
+$sudo apt insytall tcpdump
+
+$apt list --installed
+
+$expr 32 - 8
+
+$clear
+
