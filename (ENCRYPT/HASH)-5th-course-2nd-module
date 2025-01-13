@@ -1,0 +1,15 @@
+#You can decrypt the Caesar cipher in the .leftshift3 file by using the following command:
+$cat .leftShift3 | tr "d-za-cD-ZA-C" "a-zA-Z"
+
+#In this case, the command tr "d-za-cD-ZA-C" "a-zA-Z" translates all the lowercase and uppercase letters in the alphabet back to their original position.
+#The first character set, indicated by "d-za-cD-ZA-C", is translated to the second character set, which is "a-zA-Z".
+$openssl aes-256-cbc -pbkdf2 -a -d -in Q1.encrypted -out Q1.recovered -k ettubrute
+
+#Use the sha256sum command to generate the hash of the file1.txt file:
+$sha256sum file1.txt 
+
+#Hash 2 files, then save hashes somwhere, then compare for integrity
+$sha256sum file1.txt
+$sha256sum file1.txt >> file1hash
+$cmp file1hash file2hash
+
